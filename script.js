@@ -59,6 +59,7 @@ if (prompt && yesBtn && noBtn) {
   const dodge = (event) => {
     event.preventDefault();
     moveNoButton();
+    
   };
 
   noBtn.addEventListener("mouseenter", dodge);
