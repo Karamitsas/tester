@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valentine Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="card locked" id="card">
+        <section class="valentine-prompt" id="valentinePrompt" aria-live="polite">
+          <div class="prompt-content">
+        <p class="prompt-kicker">One tiny question</p>
+        <p class="prompt-title">Before we continue baby, will you be my valentine?</p>
+        <div class="prompt-actions" id="promptActions">
+          <button type="button" class="prompt-btn yes-btn" id="yesBtn">Yes</button>
+          <button type="button" class="prompt-btn no-btn" id="noBtn">No</button>
+        </div>
+          </div>
+        </section>
+
+        <div class="card-face card-front">
+          <p class="eyebrow">Valentine Secret</p>
+          <h1 class="title">A Card For My Bebo</h1>
+          <p class="subtitle">Enter our PIN to open this love note.</p>
+          <p class = "subtitle"> Lets see if you can guess it 😘 </p>
+
+          <div class="heart-lock" aria-hidden="true">
+            <img src="heart-lock.svg" alt="" />
+          </div>
+
+          <form class="unlock" id="unlockForm" autocomplete="off">
+            <label for="codeInput" class="sr-only">Enter PIN</label>
+            <input
+              id="codeInput"
+              name="code"
+              type="password"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              maxlength="4"
+              placeholder="PIN"
+              required
+            />
+            <button type="submit">Open Card</button>
+            <p class="hint" id="hint" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="card-face card-inside">
+          <p class="inside-title">Happy Valentine's Day</p>
+          <div class="inside-spread">
+            <section class="inside-panel inside-left">
+              <div class="paper-card">
+                <p class="panel-kicker">To</p>
+                <p class="panel-text">For my baby</p>
+                <p class="panel-note">Forever my favorite person.</p>
+              </div>
+            </section>
+            <section class="inside-panel inside-right">
+              <div class="paper-card">
+                <p class="message-line">
+                  Every moment with you feels like home, and every day with you
+                  feels like Valentine's Day
+                </p>
+                <p class="panel-signoff">From your baby</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
