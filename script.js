@@ -1,4 +1,4 @@
-const UNLOCK_CODE = "0214";
+const UNLOCK_CODE = "04-06-2023";
 
 const card = document.getElementById("card");
 const form = document.getElementById("unlockForm");
